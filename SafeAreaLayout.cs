@@ -23,6 +23,13 @@ namespace CandyCoded
         private void Update()
         {
 
+            if (_canvas.enabled && _wrapperTransform == null)
+            {
+
+                CreateLayoutWrapper();
+
+            }
+
             if (_lastSafeArea.Equals(Screen.safeArea))
             {
                 return;
@@ -32,8 +39,15 @@ namespace CandyCoded
 
         }
 
-        private void OnEnable()
+        private void CreateLayoutWrapper()
         {
+
+            if (_wrapperTransform != null)
+            {
+
+                return;
+
+            }
 
             _wrapperTransform =
                 new GameObject("SafeAreaLayout (Spawned)", typeof(RectTransform)).transform as RectTransform;

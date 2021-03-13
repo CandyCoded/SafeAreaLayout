@@ -60,7 +60,7 @@ namespace CandyCoded
                 child.transform.SetParent(_wrapperTransform, false);
             }
 
-            _wrapperTransform.SetParent(gameObject.transform);
+            _wrapperTransform.SetParent(gameObject.transform, false);
 
             _wrapperTransform.offsetMin = Vector2.zero;
             _wrapperTransform.offsetMax = Vector2.zero;

@@ -11,7 +11,7 @@
 ```json
 {
   "dependencies": {
-    "xyz.candycoded.safearealayout": "https://github.com/CandyCoded/SafeAreaLayout.git#v1.0.0",
+    "xyz.candycoded.safearealayout": "https://github.com/CandyCoded/SafeAreaLayout.git#v1.0.1",
     ...
   }
 }
